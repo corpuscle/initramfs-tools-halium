@@ -441,7 +441,7 @@ mountroot() {
 		for x in $(cat /proc/cmdline); do
 			case ${x} in
 			systempart=*)
-				syspart=${x#*=}
+				_syspart=${x#*=}
 				;;
 			esac
 		done
